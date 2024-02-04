@@ -138,7 +138,6 @@ public class PixelPropsUtils {
             "com.google.android.setupwizard",
             "com.google.android.youtube",
             "com.google.ar.core",
-            "com.google.oslo",
             "com.google.android.MTCL83",
             "com.google.android.UltraCVM",
             "com.google.android.apps.cameralite",
@@ -273,6 +272,9 @@ public class PixelPropsUtils {
                 || packageName.startsWith("com.samsung.")
                 || Arrays.asList(packagesToChangePixel8Pro).contains(packageName)
                 || Arrays.asList(packagesToChangePixel5a).contains(packageName)) {
+
+            if (!SystemProperties.getBoolean(SPOOF_PIXEL_GAPPS, true))
+                return;
 
             if (!SystemProperties.getBoolean(SPOOF_PIXEL_GAPPS, true))
                 return;
