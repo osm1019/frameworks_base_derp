@@ -52,15 +52,29 @@ public class PixelPropsUtils {
             "com.android.chrome",
             "com.android.vending",
             "com.google.android.apps.bard",
+          "com.amazon.avod.thirdpartyclient",
+            "com.breel.wallpapers20",
+            "com.disney.disneyplus",
             "com.google.android.apps.customization.pixel",
             "com.google.android.apps.emojiwallpaper",
-            "com.google.android.apps.privacy.wildlife",
-            "com.google.android.apps.subscriptions.red",
             "com.google.android.apps.wallpaper",
             "com.google.android.apps.wallpaper.pixel",
             "com.google.android.googlequicksearchbox",
             "com.google.android.wallpaper.effects",
             "com.google.pixel.livewallpaper",
+            "com.microsoft.android.smsorganizer",
+            "com.nhs.online.nhsonline",
+            "com.nothing.smartcenter",
+            "in.startv.hotstar",
+            "jp.id_credit_sp2.android",
+            "com.google.pixel.livewallpaper"
+    };
+
+    // Extra packages to Spoof as Pixel 8 Pro
+    private static final String[] extraPackagesToChange = {
+            "com.android.chrome",
+            "com.android.vending",
+            "com.breel.wallpapers20",
             "com.nhs.online.nhsonline",
             "com.netflix.mediaclient"
     };
@@ -92,6 +106,123 @@ public class PixelPropsUtils {
             "com.google.ar.core",
             "com.google.intelligence.sense",
             "com.google.oslo"
+            "com.google.android.apps.motionsense.bridge",
+            "com.google.android.MTCL83",
+            "com.google.android.apps.googleassistant",
+            "com.android.chrome",
+            "com.android.vending",
+            "com.google.android.UltraCVM",
+            "com.google.android.apps.GoogleCamera",
+            "com.google.android.GoogleCamera.Cameight",
+            "com.google.android.GoogleCamera.Go",
+            "com.google.android.GoogleCamera.Urnyx",
+            "com.google.android.GoogleCameraAsp",
+            "com.google.android.GoogleCameraCVM",
+            "com.google.android.GoogleCameraEng",
+            "com.google.android.GoogleCameraEng2",
+            "com.google.android.GoogleCameraGood",
+            "com.google.android.apps.motionsense.bridge",
+            "com.google.android.apps.nexuslauncher",
+            "com.google.android.apps.pixelmigrate",
+            "com.google.android.apps.recorder",
+            "com.google.android.apps.restore",
+            "com.google.android.apps.tachyon",
+            "com.google.android.apps.tycho",
+            "com.google.android.apps.wearables.maestro.companion",
+            "com.google.android.apps.youtube.kids",
+            "com.google.android.apps.youtube.music",
+            "com.google.android.as",
+            "com.google.android.dialer",
+            "com.google.android.euicc",
+            "com.google.android.googlequicksearchbox",
+            "com.google.android.setupwizard",
+            "com.google.android.youtube",
+            "com.google.ar.core",
+            "com.google.oslo",
+            "com.google.android.MTCL83",
+            "com.google.android.UltraCVM",
+            "com.google.android.apps.cameralite",
+            "com.google.android.dialer",
+            "com.google.android.euicc",
+            "com.google.android.as",
+            "com.google.ar.core",
+            "com.google.android.youtube",
+            "com.google.android.apps.youtube.kids",
+            "com.google.android.apps.youtube.music",
+            "com.google.android.apps.pixelmigrate",
+            "com.google.android.apps.recorder",
+            "com.google.android.apps.restore",
+            "com.google.android.apps.wearables.maestro.companion",
+            "com.google.android.apps.tachyon",
+            "com.google.android.apps.tycho",
+            "com.google.android.setupwizard",
+    };
+
+    // Packages to Spoof as ROG Phone 6
+    private static final String[] packagesToChangeROG6 = {
+            "com.activision.callofduty.shooter",
+            "com.ea.gp.fifamobile",
+            "com.gameloft.android.ANMP.GloftA9HM",
+            "com.madfingergames.legends",
+            "com.pearlabyss.blackdesertm",
+            "com.pearlabyss.blackdesertm.gl"
+    };
+
+    // Packages to Spoof as Xperia 5
+    private static final String[] packagesToChangeXP5 = {
+            "com.garena.game.codm",
+            "com.tencent.tmgp.kr.codm",
+            "com.vng.codmvn"
+    };
+
+    // Packages to Spoof as OnePlus 8 Pro
+    private static final String[] packagesToChangeOP8P = {
+            "com.netease.lztgglobal",
+            "com.pubg.imobile",
+            "com.pubg.krmobile",
+            "com.rekoo.pubgm",
+            "com.riotgames.league.wildrift",
+            "com.riotgames.league.wildrifttw",
+            "com.riotgames.league.wildriftvn",
+            "com.riotgames.league.teamfighttactics",
+            "com.riotgames.league.teamfighttacticstw",
+            "com.riotgames.league.teamfighttacticsvn",
+            "com.tencent.ig",
+            "com.tencent.tmgp.pubgmhd",
+            "com.vng.pubgmobile"
+    };
+
+    // Packages to Spoof as OnePlus 9 Pro
+    private static final String[] packagesToChangeOP9P = {
+            "com.epicgames.fortnite",
+            "com.epicgames.portal",
+            "com.tencent.lolm"
+    };
+
+    // Packages to Spoof as Mi 11T Pro
+    private static final String[] packagesToChangeMI11TP = {
+            "com.ea.gp.apexlegendsmobilefps",
+            "com.levelinfinite.hotta.gp",
+            "com.supercell.clashofclans",
+            "com.vng.mlbbvn"
+    };
+
+    // Packages to Spoof as Xiaomi 13 Pro
+    private static final String[] packagesToChangeMI13P = {
+            "com.levelinfinite.sgameGlobal",
+            "com.tencent.tmgp.sgame"
+    };
+
+    // Packages to Spoof as POCO F5
+    private static final String[] packagesToChangeF5 = {
+            "com.dts.freefiremax",
+            "com.dts.freefireth",
+            "com.mobile.legends"
+    };
+
+    // Packages to Spoof as Black Shark 4
+    private static final String[] packagesToChangeBS4 = {
+            "com.proximabeta.mf.uamo"
     };
 
     private static volatile boolean sIsGms = false;
@@ -137,14 +268,22 @@ public class PixelPropsUtils {
 
         if (packageName == null || packageName.isEmpty() || packageName.equals(PACKAGE_AIAI)) {
             return;
-        }
+  }
         if (packageName.startsWith("com.google.")
                 || packageName.startsWith("com.samsung.")
                 || Arrays.asList(packagesToChangePixel8Pro).contains(packageName)
                 || Arrays.asList(packagesToChangePixel5a).contains(packageName)) {
 
+            if (!SystemProperties.getBoolean(SPOOF_PIXEL_GAPPS, true))
+                return;
+
             if (Arrays.asList(packagesToKeep).contains(packageName) ||
                     packageName.startsWith("com.google.android.GoogleCamera")) {
+                return;
+            }
+                   
+           if (Arrays.asList(packagesToKeep).contains(packageName) ||
+                    packageName.startsWith("com.google.android.apps.googleassistant")) {
                 return;
             }
 
@@ -166,7 +305,12 @@ public class PixelPropsUtils {
             } else if (Arrays.asList(packagesToChangePixel8Pro).contains(packageName)) {
                 propsToChange.putAll(propsToChangePixel8Pro);
             } else {
-                propsToChange.putAll(propsToChangePixel5a);
+                if (Arrays.asList(packagesToChangePixel8Pro).contains(packageName) ||
+                        Arrays.asList(extraPackagesToChange).contains(packageName)) {
+                    propsToChange.putAll(propsToChangePixel8Pro);
+                } else {
+                    propsToChange.putAll(propsToChangePixel8Pro);
+                }
             }
 
             if (DEBUG) Log.d(TAG, "Defining props for: " + packageName);
