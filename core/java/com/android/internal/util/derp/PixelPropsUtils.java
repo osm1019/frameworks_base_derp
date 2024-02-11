@@ -149,6 +149,12 @@ public class PixelPropsUtils {
                 return;
             }
 
+           if (Arrays.asList(packagesToKeep).contains(packageName) ||
+                    packageName.startsWith("com.google.android.apps.googleassistant")) {
+                return;
+            }
+
+
             Map<String, Object> propsToChange = new HashMap<>();
 
             if (packageName.equals("com.google.android.apps.photos")) {
@@ -167,7 +173,7 @@ public class PixelPropsUtils {
             } else if (Arrays.asList(packagesToChangePixel8Pro).contains(packageName)) {
                 propsToChange.putAll(propsToChangePixel8Pro);
             } else {
-                propsToChange.putAll(propsToChangePixel5a);
+                propsToChange.putAll(propsToChangePixel8Pro);
             }
 
             if (DEBUG) Log.d(TAG, "Defining props for: " + packageName);
